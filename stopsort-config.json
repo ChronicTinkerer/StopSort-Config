@@ -1,0 +1,61 @@
+{
+  "ios": {
+    "latestVersion": "0.5.0",
+    "minVersion": "0.5.0",
+    "minBuild": "26033001",
+    "storeURL": "https://apps.apple.com/app/stopsort/id000000000",
+    "builds": {
+      "26033001": { "tier": "free", "env": "prod" },
+      "26033002": { "tier": "free", "env": "dev" },
+      "26033009": { "tier": "pro", "env": "dev" }
+    },
+    "defaultTier": "pro"
+  },
+  "android": {
+    "latestVersion": "1.0.0",
+    "minVersion": "1.0.0",
+    "minBuild": 260403001,
+    "storeURL": "",
+    "defaultTier": "pro",
+    "forceUpdate": false,
+    "maintenanceMode": false,
+    "maintenanceMessage": "",
+    "builds": {
+      "260403001": { "tier": "pro", "env": "dev" }
+    }
+  },
+  "shared": {
+    "allFeaturesFree": false,
+    "earlyAccessMessage": "Some features require a Basic or Pro subscription.",
+    "maxFreeStopsPerRoute": 50,
+    "maxFreeRoutesPerDay": 1,
+    "showProBadge": true,
+    "feedbackEmail": "srlandon@gmail.com",
+    "privacyURL": "https://stopsort.app/privacy",
+    "termsURL": "https://stopsort.app/terms",
+    "announcements": [],
+    "tiers": {
+      "free": {
+        "label": "Free",
+        "maxStopsPerRoute": 50,
+        "maxRoutesPerDay": 1,
+        "modes": ["FIX_AMAZON", "SHORTEST_DISTANCE"],
+        "features": ["basic_export", "clipboard_import"]
+      },
+      "basic": {
+        "label": "Basic — $29.99/year",
+        "maxStopsPerRoute": 999,
+        "maxRoutesPerDay": 999,
+        "modes": ["FIX_AMAZON", "SHORTEST_DISTANCE", "ON_TIME_PRIORITY", "BALANCED"],
+        "features": ["basic_export", "clipboard_import", "label_scanner", "route_history", "endpoint_bias"]
+      },
+      "pro": {
+        "label": "Pro — $7.99/mo",
+        "maxStopsPerRoute": 999,
+        "maxRoutesPerDay": 999,
+        "modes": ["FIX_AMAZON", "SHORTEST_DISTANCE", "ON_TIME_PRIORITY", "BALANCED"],
+        "features": ["basic_export", "clipboard_import", "label_scanner", "route_history", "endpoint_bias", "csv_export", "sheets_export", "vehicle_costs"]
+      }
+    }
+  }
+}
