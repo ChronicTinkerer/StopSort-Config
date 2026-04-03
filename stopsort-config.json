@@ -17,6 +17,7 @@
     "minBuild": 260403001,
     "storeURL": "",
     "defaultTier": "pro",
+    "defaultEnv": "dev",
     "forceUpdate": false,
     "maintenanceMode": false,
     "maintenanceMessage": "",
